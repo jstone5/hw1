@@ -68,9 +68,9 @@
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
-DROP TABLE IF EXISTS movies
-DROP TABLE IF EXISTS actors
-DROP TABLE IF EXISTS roles
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS roles;
 
 -- Create new tables, according to your domain model
 -- TODO!
@@ -146,7 +146,7 @@ VALUES
 
 -- The SQL statement for the movies output
 -- TODO!
-SELECT * FROM movies
+SELECT movie_name, year, mpaa_rating, director FROM movies;
 
 -- Prints a header for the cast output
 .print ""
