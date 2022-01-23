@@ -98,6 +98,46 @@ CREATE TABLE roles (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+INSERT INTO movies (movie_name, year, mpaa_rating, director)
+VALUES ("Batman Begins", 2005, "PG-13", "Christopher Nolan"); --id = 1
+
+INSERT INTO movies (movie_name, year, mpaa_rating, director)
+VALUES ("The Dark Knight", 2008, "PG-13", "Christopher Nolan"); -- id = 2
+
+INSERT INTO movies (movie_name, year, mpaa_rating, director)
+VALUES ("The Dark Knight Rises", 2012, "PG-13", "Christopher Nolan"); -- id = 3
+
+INSERT INTO actors (actor_name)
+VALUES
+    ("Christian Bale"),
+    ("Michael Caine"),
+    ("Liam Neeson"),
+    ("Katie Holmes"),
+    ("Gary Oldman"),
+    ("Heath Ledger"),
+    ("Aaron Eckhart"),
+    ("Maggie Gyllenhaal"),
+    ("Tom Hardy"),
+    ("Joseph Gordon-Levitt"),
+    ("Anne Hathaway");
+
+INSERT INTO roles (movie_id, actor_id, character)
+VALUES
+    (1, 1, "Bruce Wayne"),
+    (1, 2, "Alfred"),
+    (1, 3, "Ra's Al Ghul"),
+    (1, 4, "Rachel Dawes"),
+    (1, 5, "Commissioner Gordon"),
+    (2, 1, "Bruce Wayne"),
+    (2, 6, "Joker"),
+    (2, 7, "Harvey Dent"),
+    (2, 2, "Alfred"),
+    (2, 8, "Rachel Dawes"),
+    (3, 1, "Bruce Wayne"),
+    (3, 5, "Commissioner Gordon"),
+    (3, 9, "Bane"),
+    (3, 10, "John Blake"),
+    (3, 11, "Selina Kyle");
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -106,6 +146,7 @@ CREATE TABLE roles (
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT * FROM movies
 
 -- Prints a header for the cast output
 .print ""
