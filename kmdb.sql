@@ -66,6 +66,9 @@
 .mode column
 .headers off
 
+-- Extend width of columns
+.width 25 25 25 25
+
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 DROP TABLE IF EXISTS movies;
